@@ -6,7 +6,7 @@ import Share from '../../img/share.svg';
 import Info from '../../img/info.svg';
 import { useState } from 'react';
 
-export default function Card({ post }) {
+export default function Card({ post, socket, user }) {
   const [liked, setLiked] = useState(false);
 
   const handleNotification = () => {
